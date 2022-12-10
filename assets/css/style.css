@@ -54,12 +54,6 @@ main {
     background-color: #F5F6F9;
 }
 
-.box {
-    background-color: #fff;
-    height: 150px;
-    border-radius: 10px;
-}
-
 .box h4 {
     color: #051D41;
     font-family: 'mada', sans-serif;
@@ -68,21 +62,6 @@ main {
 .box p {
     color: #051D41;
     font-family: 'mada', sans-serif;
-}
-
-.box .circulo {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #051D41;
-    border-radius: 100%;
-}
-
-.circulo2 {
-    width: 250px;
-    height: 250px;
-    border: none;
-    border-radius: 100%;
-    background-color: #fff;
 }
 
 footer {
@@ -107,11 +86,16 @@ footer .text-final {
     font-size: 14px;
 }
 
+/* .img-card{
+    background:url(/assets/img/mouse.png) no-repeat center;
+} */
+
 /* pagina produto */
-.botao-quanti{
+.botao-quanti {
     margin: 0 auto;
 }
-.botao-quanti input[type="number"] {   
+
+.botao-quanti input[type="number"] {
     font-size: 30px;
     border: none;
     background-color: rgb(255, 255, 255);
@@ -139,4 +123,8 @@ footer .text-final {
 #increment {
     padding: 10px 20px 10px 0px;
     border-radius: 0 45px 45px 0;
+}
+.subtitulo-preco{
+    font-family: 'mada', sans-serif;
+    font-size: 14px;
 }

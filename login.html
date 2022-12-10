@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petterson Info</title>
+    <title>Petterson Informatica</title>
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- css bootstrap -->
@@ -21,7 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
-
     <header class="backgroud-azul" id="header">
         <div class="container text-center">
             <div class="pt-5">
@@ -62,7 +61,7 @@
                         </li>
                         <li class="nav-item">
                             <!--Fazer confirmação de conta de houver uma conta salva entrar para o perfil se nao ir para formulario-->
-                            <a class="nav-link text-white" href="login.html">
+                            <a class="nav-link text-white" href="formulario.html">
                                 <i class="bi bi-person"> Minha <br> conta</i>
                             </a>
                         </li>
@@ -103,9 +102,9 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#destaque">Veja Também</a>
+                    <a class="nav-link text-white" href="#destaque">Destaques</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> 
                     <a class="nav-link text-white" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -118,212 +117,84 @@
         </nav>
     </header>
     <main>
-        <section class="container pt-5">
-            <div class="card">
+        <section>
+            <div class="container">
+                <h3 class="text-center pt-5 mb-5">
+                    <b>
+                        Entre na sua Conta
+                    </b>
+                </h3>
                 <div class="row">
-                    <div class="col-4">
-                        <div class="m-3">
-                            <span>
-                                0 Avaliações
-                            </span>
-                            <h3 class="my-5">
-                                <b>
-                                    mouse black ultra master bom demais
-                                </b>
-                            </h3>
-                            <p class="my-5">
-                                Esse mouse de 1000000000 de DPI sendo o mais vendi do mercado.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="m-3">
-                            <img src="assets\img\mouse.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card bg-transparent m-3 p-3">
-                            <div class="text-center my-3">
-                                <h4 class="my-2 fs-2 text-primary">
+                    <div class="col-sm-6">
+                        <div class="card mb-5">
+                            <div class="m-5 text-center">
+                                <h5 class="mt-5">
                                     <b>
-                                        R$ XXX,xx
+                                        Já sou cadastrado
                                     </b>
-                                </h4>
-                                <div>
-                                    <p class="subtitulo-preco">ou <b> R$ XXX,xx </b> à vista ou no pix
-                                        <br>
-                                        ou <b> ate 10X</b> no cartão de credito com juros
-                                    </p>
+                                </h5>
+                                <span class="align-middle">
+                                    Informe seu e-mail ou CPF/CNPJ para se autenticar.
+                                </span>
+                                <div class="text-center my-5">
+                                    <a href="" type="button" class="mt-2 btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#modalLogin">Entrar</a>
                                 </div>
-                            </div>
-                            <div class="text-center pb-5">
-                                <div class="m-4">
-                                    <a class="btn btn-success"> Adcionar ao carrinho</a>
-                                    <br>
-                                    <i class="bi bi-shield-lock subtitulo-preco">Ambiente de compra seguro</i>
+
+                                <div class="modal fade" id="modalLogin" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class=" text-center mt-5">
+                                                <h5 class="modal-title" id="exampleModalLabel">Entrar</h5>
+                                                <span class="modal-subtitlle">Insira seu email e senha abaixo.</span>
+                                            </div>
+                                            <div class="mx-5 mt-4 mb-4">
+                                                <div class="text-start">
+                                                    <label for="email-input"><b>E-mail:</b></label>
+                                                </div>
+                                                <input type="email" class="form-control mb-2" id="email-input">
+                                                <div class="text-start">
+                                                    <label for="input-senha"><b>Senha:</b></label>
+                                                </div>
+                                                <input type="password" class="form-control mb-2" id="input-senha">
+                                                <a href="index.html" type="btn" class="btn btn-secondary">Entrar</a>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class=" text-center w-100 mt-4 mb-4">
+                                                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-654243396%3A1670708786723257&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button%26pli%3D1&ec=GAlAwAE&hl=pt_BR&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession"
+                                                        class="btn btn-danger w-100 mb-2" target="_blank">Google</a>
+                                                    <a href="https://pt-br.facebook.com/" class="btn btn-primary w-100"
+                                                        target="_blank">Facebook</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <div>
-                                    <i class="bi bi-truck subtitulo-preco">Consulte o prazo de entrega
-                                    </i>
-                                </div>
-                                <div class="m-5">
-                                    <input type="text form-control form-control-sm">
-                                    <a type="btn" class="btn btn-dark m-2">Consultar</a>
-                                </div>
-                                <div>
-                                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-                                        target="_blank" class="subtitulo-preco">Não sei meu CEP</a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <div class="accordion m-3" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseOne">
-                                    Descrição
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
+
+                    <div class="col-sm-6">
+                        <div class="card mb-5">
+                            <div class="m-5">
+                                <h5 class="text-center mt-5">
+                                    <b>
+                                        Esta é minha primeira compra
+                                    </b>
+                                </h5>
+                                <div class="text-center">
                                     <span>
-                                        <strong> Características: </strong> <br>
-                                        - Marca: nao sei <br>
-                                        - Modelo: 00 <br>
-                                        <strong> Especificações: </strong> <br>
-                                        - Experiência de digitação instantaneamente familiar <br>
-                                        - Mouse curvado ambidestro <br>
-                                        - COnfiável e sem complicação, com vida útil duradoura das pilhas <br>
-                                        - Liberdade sem fio com receptor nano USB Unifying <br>
-                                        <strong> Requisitos do Sistema: </strong><br>
-                                        - PC baseado no Windows <br>
-                                        - Porta USB <br>
-                                        - Conexão com a internet (apenas para download opcional de software) <br>
-                                        - Chrome OS <br>
-                                        <strong> Conteúdo da embalagem: </strong><br>
-                                        - Teclado sem fio <br>
-                                        - Wireless Mouse <br>
-                                        - Receptor Logitech Unifying <br>
-                                        - 03 pilhas alcalinas AA (pré instaladas) <br>
-                                        - Documentação do usuário <br>
-                                        <strong> Garantia: </strong> <br>
-                                        -1 ano de garantiaPeso:-1350 gramas (bruto com embalagem)
+                                        O cadastro em nossa loja é simples e rápido.
                                     </span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                    aria-controls="panelsStayOpen-collapseTwo">
-                                    Avaliações
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body">
-                                    Em desenvolvimento
+                                <div class="mb-3 mt-4">
+                                    <label for="input-cadastrar"><b>E-mail:</b></label>
+                                    <input type="email" class="form-control" id="input-cadastrar">
+                                    <a href="formulario.html" type="btn" class="btn btn-dark mt-2">Cadastrar</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container pt-5 pb-5" id="destaque">
-            <div class="row">
-                <div class="col-12">
-                    <h2>
-                        Veja Também
-                    </h2>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card card1 shadow-sm">
-                        <div>
-                            <img src="assets\img\Rectangle2.png" class="card-img-top img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title"><b>Mouse</b></h6>
-                            <h3 class="card-text"><b>R$ XXX,xx</b></h3>
-                            <p><b>R$ XXX,xx</b> à vista com desconto
-                                ou <b>2X</b> de <b>R$ XXX,xx</b> Sem juros.</p>
-                        </div>
-                        <div class="p-3 d-none" id="bottom-hover1">
-                            <a type="button" href="produto.html" class="btn btn-dark border w-100 mb-2">ver
-                                detalhes</a>
-                            <br>
-                            <a type="button" href="#" class="btn btn-light border w-100 mb-2">adcionar
-                                Carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card card2 shadow-sm">
-                        <div>
-                            <img src="assets\img\Rectangle2.png" class="card-img-top img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title"><b>Mouse</b></h6>
-                            <h3 class="card-text"><b>R$ XXX,xx</b></h3>
-                            <p><b>R$ XXX,xx</b> à vista com desconto
-                                ou <b>2X</b> de <b>R$ XXX,xx</b> Sem juros.</p>
-                        </div>
-                        <div class="p-3 d-none" id="bottom-hover2">
-                            <a type="button" href="produto.html" class="btn btn-dark border w-100 mb-2">ver
-                                detalhes</a>
-                            <br>
-                            <a type="button" href="#" class="btn btn-light border w-100 mb-2">adcionar
-                                Carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card card3 shadow-sm">
-                        <div>
-                            <img src="assets\img\Rectangle2.png" class="card-img-top img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title"><b>Mouse</b></h6>
-                            <h3 class="card-text"><b>R$ XXX,xx</b></h3>
-                            <p><b>R$ XXX,xx</b> à vista com desconto
-                                ou <b>2X</b> de <b>R$ XXX,xx</b> Sem juros.</p>
-                        </div>
-                        <div class="p-3 d-none" id="bottom-hover3">
-                            <a type="button" href="produto.html" class="btn btn-dark border w-100 mb-2">ver
-                                detalhes</a>
-                            <br>
-                            <a type="button" href="#" class="btn btn-light border w-100 mb-2">adcionar
-                                Carrinho</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3">
-                    <div class="card card4 shadow-sm">
-                        <div>
-                            <img src="assets\img\Rectangle2.png" class="card-img-top img-fluid" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h6 class="card-title"><b>Mouse</b></h6>
-                            <h3 class="card-text"><b>R$ XXX,xx</b></h3>
-                            <p><b>R$ XXX,xx</b> à vista com desconto
-                                ou <b>2X</b> de <b>R$ XXX,xx</b> Sem juros.</p>
-                        </div>
-                        <div class="p-3 d-none" id="bottom-hover4">
-                            <a type="button" href="produto.html" class="btn btn-dark border w-100 mb-2">ver
-                                detalhes</a>
-                            <br>
-                            <a type="button" href="#" class="btn btn-light border w-100 mb-2">adcionar
-                                Carrinho</a>
                         </div>
                     </div>
                 </div>
@@ -437,8 +308,6 @@
             </div>
         </section>
     </footer>
-    <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/hover-cards.js"></script>
 </body>
 
 </html>
