@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;900&display=swap');
+
+* {
+    font-family: 'Mada', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #051D41;
+    color: white;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 15em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+}
+
+header i {
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+}
+
+header p {
+    font-family: 'mada', sans-serif;
+    font-size: 14px;
+}
+
+header .titulo {
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+}
+
+main {
+    background-color: #F5F6F9;
+}
+
+.box h4 {
+    color: #051D41;
+    font-family: 'mada', sans-serif;
+}
+
+.box p {
+    color: #051D41;
+    font-family: 'mada', sans-serif;
+}
+
+footer {
+    background-color: #fff;
+}
+
+footer .background-azul {
+    background-color: #051D41;
+}
+
+footer .text {
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+}
+
+footer .logo-cartoes {
+    width: 10%;
+}
+
+footer .text-final {
+    font-family: 'mada', sans-serif;
+    font-size: 14px;
+}
+
+/* .img-card{
+    background:url(/assets/img/mouse.png) no-repeat center;
+} */
+
+/* pagina produto */
+.botao-quanti {
+    margin: 0 auto;
+}
+
+.botao-quanti input[type="number"] {
+    font-size: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #051D41;
+}
+
+.botao-quanti input::-webkit-outer-spin-button,
+.botao-quanti input::-webkit-inner-spin-button {
+    margin: 0;
+}
+
+.botao-quanti button {
+    color: #051D41;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#decrement {
+    padding: 10px 0px 10px 20px;
+    border-radius: 45px 0 0 45px;
+}
+
+#increment {
+    padding: 10px 20px 10px 0px;
+    border-radius: 0 45px 45px 0;
+}
+.subtitulo-preco{
+    font-family: 'mada', sans-serif;
+    font-size: 14px;
+}
