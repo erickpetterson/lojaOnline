@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petterson Informatica</title>
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
     <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- css bootstrap -->
@@ -24,18 +25,24 @@
 
     <header class="backgroud-azul" id="header">
         <div class="container text-center">
-            <div class="pt-5">
-                <h2 class="titulo">Petterson Informatica</h1>
+            <div class="row">
+                <div class="col-12">
+                    <div class="pt-5">
+                        <h2 class="titulo">Petterson Informatica</h1>
+                    </div>
+                </div>
             </div>
-            <div class=" row  text-white">
-                <div class="col mt-5">
-                    <div class="search-bar" data-bs-toggle="dropdown">
-                        <input class="dropdown" placeholder="Pesquisar" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
+            <div class="row  text-white ">
+                <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start mt-5">
+                    <div class="" data-bs-toggle="dropdown">
+                        <div class="search-bar">
+                            <input class="dropdown" placeholder="Pesquisar" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </div>
                         <ul class="dropdown-menu  ">
                             <li>
                                 <h6 class="dropdown-header">Pesquise por Departamentos</h6>
@@ -51,8 +58,8 @@
                         </ul>
                     </div>
                 </div>
-                <nav class="col mt-5">
-                    <ul class="nav d-flex justify-content-end">
+                <nav class="col-12 col-sm-6 mt-5">
+                    <ul class="nav text-center justify-content-center justify-content-sm-end">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="">
                                 <i class="bi bi-telephone"> Entre em <br> contato</i>
@@ -61,7 +68,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                             <!--Fazer confirmação de conta de houver uma conta salva entrar para o perfil se nao ir para formulario-->
+                            <!--Fazer confirmação de conta de houver uma conta salva entrar para o perfil se nao ir para formulario-->
                             <a class="nav-link text-white" href="login.html">
                                 <i class="bi bi-person"> Minha <br> conta</i>
                             </a>
@@ -78,43 +85,47 @@
             </div>
         </div>
         <nav class="container py-3">
-            <ul class="nav  nav-tabs d-flex justify-content-between">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Departamentos
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">
-                                Pesquisar
-                            </a></li>
-                        <li><a class="dropdown-item" href="#">
-                                Informatica
-                            </a></li>
-                        <li><a class="dropdown-item" href="#">
-                                Hardware
-                            </a></li>
-                        <li><a class="dropdown-item" href="#">
-                                Redes e wireless
-                            </a></li>
-                        <li><a class="dropdown-item" href="#">
-                                Perifericos
-                            </a></li>
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                    <ul class="nav  nav-tabs justify-content-center justify-content-sm-between">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Departamentos
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">
+                                        Pesquisar
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        Informatica
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        Hardware
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        Redes e wireless
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        Perifericos
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#destaque">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#noticias">Noticias</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#destaque">Destaques</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#lancamentos">Lançamentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#noticias">Noticias</a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -502,7 +513,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="text-white col-12">
+                    <div class="text-white col-12 col-sm-12">
                         <ul class="nav d-flex justify-content-around text-uppercase pt-2">
                             <li class="nav-item"><a class="nav-link text-light text" href=""><b>fale conosco</b></a>
                             </li>
@@ -517,7 +528,7 @@
         <section class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-12 col-sm-10">
                         <ul class="nav d-flex align-items-center  pt-3 pb-3">
                             <li class="nav-item">
                                 <a href="" class="nav-link text-black">Termos de uso</a>
@@ -538,7 +549,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12  pt-3 pb-3">
+                    <div class="col-12 col-sm-12  pt-3 pb-3">
                         <p>Os preços, promoções, condições de pagamento, frete e estoque são válidos apenas para compras
                             pelo site. No caso de diferença de preço no site, o valor válido é o do carrinho de compras.
                             A fim de oferecer mais segunça aos usuários, todas as compras passam por uma validação e
@@ -546,7 +557,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center  pt-3 pb-3">
+                    <div class="col-6 col-sm-6 d-flex align-items-center  pt-3 pb-3">
                         <h6>
                             <b>
                                 Formas de pagamento:
@@ -567,7 +578,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-6 col-sm-6 d-flex align-items-center">
                         <h6>
                             <b>
                                 selos de segurança:
@@ -591,7 +602,7 @@
         <section class="background-azul">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-sm-12">
                         <p class="text-white text-final">
                             Petterson Informática - Avenida um nome ae, Nº0000 - Manaus - AM
                             <br>
